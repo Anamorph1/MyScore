@@ -14,11 +14,11 @@
 <body>
     @using (Html.BeginForm())
     {
-        <p>Gospodarze: @Html.TextBoxFor(x => x.home)</p>
-        <p>Goście: @Html.TextBoxFor(x => x.away)</p>
-        <p>Miejsce: @Html.TextBoxFor(x => x.place)</p>
-        <p>Sędzia: @Html.TextBoxFor(x => x.referee)</p>
-        <p>Liga: @Html.TextBoxFor(x => x.league)</p>
+        <p>Gospodarze: @Html.TextBoxFor(x => x.Home)</p>
+        <p>Goście: @Html.TextBoxFor(x => x.Away)</p>
+        <p>Miejsce: @Html.TextBoxFor(x => x.Place)</p>
+        <p>Sędzia: @Html.TextBoxFor(x => x.Referee)</p>
+        <p>Liga: @Html.TextBoxFor(x => x.League)</p>
 
         <input type="submit" value="Stwórz"/>
     }
