@@ -1,0 +1,23 @@
+﻿@model MyScore.Models.Match
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowMatch</title>
+</head>
+<body>
+    <div> 
+        <p>Gospodarze: @Model.home</p>
+        <p>Goście: @Model.away</p>
+        <p>Miejsce: @Model.place</p>
+        <p>Sędzia: @Model.referee</p>
+        <p>Liga: @Model.league</p>
+    </div>
+</body>
+</html>

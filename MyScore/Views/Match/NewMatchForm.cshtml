@@ -1,0 +1,26 @@
+﻿@model MyScore.Models.Match
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NewMatchForm</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <p>Gospodarze: @Html.TextBoxFor(x => x.home)</p>
+        <p>Goście: @Html.TextBoxFor(x => x.away)</p>
+        <p>Miejsce: @Html.TextBoxFor(x => x.place)</p>
+        <p>Sędzia: @Html.TextBoxFor(x => x.referee)</p>
+        <p>Liga: @Html.TextBoxFor(x => x.league)</p>
+
+        <input type="submit" value="Stwórz"/>
+    }
+</body>
+</html>
